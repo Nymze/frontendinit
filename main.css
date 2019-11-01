@@ -475,6 +475,71 @@ div.scrollmenu a:hover {
   text-align: center;
 }
 
+/* ===== AFrame  ====== */
+
+#myEmbeddedScene {
+  height: 600px;
+  width: 100%;
+}
+
+/* ====== Card ====== */
+
+.card {
+  transition: 0.3s;
+  width: 50%;
+  margin: 50px;
+}
+
+.card:hover {
+  margin-left: -30px;
+}
+
+.card:hover .card-writings {
+  color: black;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+}
+
+.Card-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.SectionBackground {
+  background-color: #d1274b;
+  height: 80vh;
+}
+
+.card-writings {
+  position: relative;
+  left: 64em;
+  bottom: 24em;
+}
+
+.Card-font {
+  font-size: 56px;
+}
+
+.image-section2 {
+}
+
+.image-section2:hover img {
+}
 /* Animation */
 
 .line-1 {

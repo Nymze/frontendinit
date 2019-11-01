@@ -11,6 +11,12 @@ app.get("/main.css", function(req, res) {
   res.sendFile(__dirname + "/" + "main.css");
 });
 
+app.get("/scene.gltf", function(req, res) {
+  res.sendFile(__dirname + "/" + "scene.gltf");
+});
+
+app.use(express.static(path.join(__dirname, "public")));
+
 /* app.get("/", (req, res) => {
   res.status(200).send("WHATABYTE: Food For Devs");
 }); */

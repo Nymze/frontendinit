@@ -7,6 +7,7 @@
     <title>My app</title>
 
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
   </head>
 
   <body>
@@ -132,9 +133,42 @@
       </div>
     </main>
 
-    <!-- =========== Middle Section ===========  -->
+    <!-- =========== Aframe===========  
 
-    <section></section>
+    <div id="myEmbeddedScene">
+      <a-scene embedded>
+        <a-assets>
+          <a-asset-item id="tree" src=""></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#tree"></a-entity>
+
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+
+        <a-sky color="#000000"></a-sky>
+      </a-scene>
+    </div> -->
+
+    <!-- =========== Seconde section ===========  -->
+
+    <section class="SectionBackground">
+      <div class="Card-container">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+            alt="Avatar"
+            style="width:100%"
+            class="image-section2"
+          />
+          
+          </div>
+          <div class="container card-writings">
+            <h4 class="Card-font"><b>BURGERS</b></h4>
+            
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- =========== Footer ===========  -->
 
